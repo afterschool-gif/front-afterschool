@@ -1,0 +1,150 @@
+<template>
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> |
+     <router-link to="/estudiantes">Estudiantes</router-link>
+  </nav>
+  <router-view/>
+</template>
+
+<style>
+/* ===== After School: Comic Sans, fondos pastel y letras en tonos de acento ===== */
+#app {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+  color: #7a2e55;
+  background: #fff7fb;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+body {
+  margin: 0;
+}
+
+/* Menú */
+nav {
+  padding: 20px;
+  background: #ffd9ea;
+  border-bottom: 4px dashed #f8a5c8;
+}
+
+nav a {
+  font-weight: bold;
+  color: #8e44ad;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+nav a.router-link-exact-active {
+  color: #c2185b;
+  text-decoration: underline;
+}
+
+h1 {
+  color: #c2185b;
+}
+
+/* Formulario */
+.formulario {
+  background: #f3edff;
+  border: 3px dashed #c3b1f7;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 18px;
+}
+
+.formulario h2 {
+  color: #6a1b9a;
+  margin-top: 0;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: left;
+}
+
+.campos label {
+  display: flex;
+  flex-direction: column;
+  color: #6a1b9a;
+  font-size: 14px;
+}
+
+.campos input,
+.campos select {
+  font-family: inherit;
+  padding: 7px;
+  border: 2px solid #d9ccff;
+  border-radius: 10px;
+  color: #4a2c82;
+  background: #fff;
+  margin-top: 4px;
+}
+
+.botones {
+  margin-top: 16px;
+}
+
+.botones button {
+  font-family: inherit;
+  font-size: 15px;
+  margin: 4px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 2px solid #f48fb1;
+  background: #ffc2dc;
+  color: #ad1457;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background: #ffadd0;
+}
+
+.mensaje {
+  color: #1b7a4b;
+  background: #d6f5e6;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+.mensaje:empty {
+  display: none;
+}
+
+/* Tabla */
+.tabla {
+  background: #f0fbff;
+  border: 2px solid #bfe6ff;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px 18px 18px;
+}
+
+.tabla h2 {
+  color: #0d5c9e;
+}
+
+.tabla table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th {
+  background: #d4efff;
+  color: #0d5c9e;
+  padding: 8px;
+}
+
+.tabla td {
+  color: #0f4c75;
+  padding: 8px;
+  border-top: 1px solid #d4efff;
+}
+</style>
